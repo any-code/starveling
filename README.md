@@ -5,7 +5,7 @@ Check out <http://starve.me> for documentation and details.
 
 ## Getting started
 
-- [Download the zip](https://github.com/any-code/starveling/releases/download/0.0.1/starveling-0.0.1.zip)
+- [Download the zip](https://github.com/any-code/starveling/archive/0.0.1.zip)
 - Clone the repo: `git clone https://github.com/any-code/starveling.git` (Note: this is under active development)
 
 
