@@ -246,30 +246,114 @@
         <h2>Code Blocks</h2>
         <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
         <pre><code>.some-class {
-            background-color: red;
-            }
-        </code></pre>
+    background-color: red;
+}</code></pre>
     </div>
-
-    <!-- Code -->
-    <div class="docs-section" id="code">
-        <h6 class="docs-header">Code</h6>
-        <p></p>
-        <div class="docs-example">
-
+    <hr>
+    <div class="row">
+        <h2>Tables</h2>
+        <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+        <table class="u-full-width">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Dave Gamache</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>San Francisco</td>
+            </tr>
+            <tr>
+                <td>Dwayne Johnson</td>
+                <td>42</td>
+                <td>Male</td>
+                <td>Hayward</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="row">
+        <h2>Media Queries</h2>
+        <p>Starveling uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Starveling's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+        <div class="row">
+            <div class="six columns">
+                <ul>
+                    <li><strong>Desktop HD</strong>: 1200px</li>
+                    <li><strong>Desktop</strong>: 1000px</li>
+                    <li><strong>Tablet</strong>: 750px</li>
+                </ul>
+            </div>
+            <div class="six columns">
+                <ul>
+                    <li><strong>Phablet</strong>: 550px</li>
+                    <li><strong>Mobile</strong>: 400px</li>
+                </ul>
+            </div>
         </div>
+        <hr>
+        <div class="row">
+            <h2>Utilities</h2>
+            <p>Starveling has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+<pre><code>
+    /* Utility Classes */
 
+    /* Make element full width */
+    .u-full-width {
+      width: 100%;
+      box-sizing: border-box;
+    }
 
-        <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example"><code class="code-example-body prettyprint prettyprinted"><span class="tag">&lt;pre&gt;&lt;code&gt;</span><span class="pln">.some-class {
-  background-color: red;
-}</span><span class="tag">&lt;/code&gt;&lt;/pre&gt;</span><span class="pln">
+    /* Make sure elements don't run outside containers (great for images in columns) */
+    .u-max-full-width {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
 
-</span><span class="com">&lt;!-- Remember every whitespace and break will be preserved in a &lt;pre&gt;, including indentation in your code --&gt;</span></code>
+    /* Float either direction */
+    .u-pull-right {
+      float: right;
+    }
+    .u-pull-left {
+      float: left;
+    }
+
+    /* Clear a float */
+    .u-cf {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Centered text */
+    .u-center-text {
+      text-align: center;
+    }
+
+    /* Additional padding at bottom */
+    .u-pad-below {
+      padding-bottom: 2rem;
+    }
+
+    /* Apply margin to all direct children */
+    .u-well > * {
+      margin: 0.5rem;
+    }
+</code>
 </pre>
-        <!-- ————————————————————————————————————————————————————— -->
-
-
+            <div class="twelve column sample-background u-center-text">
+                <div class="u-well">
+                    <a class="button" href="index.html">Starveling Default</a>
+                    <a class="button button" href="inverted.html" >Starveling Inverted</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script>
