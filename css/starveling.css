@@ -471,7 +471,8 @@ body.inverted input[type="text"], body.inverted input[type="tel"], body.inverted
 body.inverted input[type="password"], body.inverted textarea, body.inverted select {
 						 background-color: rgba(0, 0, 0, 0.3);
 							 border-color: rgba(255, 255, 255, 0.18); }
-th, td {              border-bottom-color: rgba(255, 255, 255, 0.16); }
+body.inverted th, body.inverted td {
+					  border-bottom-color: rgba(255, 255, 255, 0.16); }
 ::-webkit-input-placeholder {       color: rgba(255, 255, 255, 0.7); }
 :-moz-placeholder {                 color: rgba(255, 255, 255, 0.7); }
 ::-moz-placeholder {                color: rgba(255, 255, 255, 0.7); }
