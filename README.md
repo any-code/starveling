@@ -17,7 +17,7 @@ The download includes Starveling's CSS, Normalize CSS as a reset, a sample favic
 starveling/
 ├── index.html
 ├── css/
-│   ├── normalize.min.css
+│   ├── normalize.css
 │   └── starveling.css
 └── images/
     └── favicon.ico
@@ -38,7 +38,7 @@ Starveling is lightweight and simple. It styles only raw HTML elements (with a f
 - Firefox latest
 - Opera latest
 - Safari latest
-- IE latest
+- IE 9+
 
 The above list is non-exhaustive. Starveling works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
 
